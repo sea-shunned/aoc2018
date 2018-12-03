@@ -11,9 +11,9 @@ seen_freqs = set()
 seen_freqs.add(freq)
 
 for val in cycle(vals):
-	freq += val
-	if freq in seen_freqs:
-		print(freq)
-		break
-	else:
-		seen_freqs.add(freq)
+    freq += val
+    if freq in seen_freqs:
+        print(freq)
+        break
+    else:
+        seen_freqs.add(freq)
