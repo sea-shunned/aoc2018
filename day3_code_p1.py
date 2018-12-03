@@ -29,6 +29,9 @@ for line in raw_data:
 sheet = np.zeros((1000,1000))
 
 for start_col, start_row, width, height in data:
-    sheet[start_col:start_col+width,start_row:start_row+height] += 1
+    sheet[start_col:start_col+width, start_row:start_row+height] += 1
 
 print(np.sum(sheet>1))
+
+# Previously had code to identify fabric size as question said "at least 1000" inches
+# Turns out it always is
