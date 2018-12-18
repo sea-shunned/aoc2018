@@ -1,4 +1,5 @@
 import copy
+import time
 
 def create_area(fname):
     # Read in the data
@@ -51,8 +52,11 @@ def minute_step(area, coords, end):
 
 def vis_area(area):
     # Just if we want to look at the state
+    # time.sleep(0.009)
+    ans = ""
     for line in area:
-        print(''.join(line))
+        ans += "\n" + ''.join(line)
+    print(ans)
 
 def eval_area(area, end):
     # Evaluate the resource value

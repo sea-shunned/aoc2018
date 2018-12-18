@@ -18,7 +18,8 @@ for score, count in scores.items():
 for minute in range(1001,5000):
     area = utils.minute_step(area, coords, end)
     resource_val = utils.eval_area(area, end)
+    utils.vis_area(area)
     # Find what the value will be during the period on the 1000000000th minute
-    if (1000000000 - minute) % 28 == 0:
-        print(resource_val)
-        break
+#     if (1000000000 - minute) % 28 == 0:
+#         print(resource_val)
+#         break
